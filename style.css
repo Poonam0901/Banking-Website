@@ -1,0 +1,147 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)), url("img3.jpg");
+	background-repeat: no-repeat;
+	height: 100vh;
+    background-size: cover;
+    background-attachment: scroll;
+    background position: center;
+	margin: 0px;
+	padding: 0px;
+	font: poppins;
+}
+
+#main
+{
+	width: 100%;
+	height: 50vh;
+	position: relative;
+}
+
+nav
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: transparent;
+	box-shadow: 5px 10px 30px rgba(0,0,0,0.02);
+	z-index: 1;
+}
+
+.logo img
+{
+	height: 80px;
+}
+
+.menu
+{
+	list-style: none;
+	display: flex;
+}
+
+.menu li a
+{
+	height: 40px;
+	line-height: 43px;
+	margin: 3px;
+	padding: 0px 22px;
+	display: flex;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: white;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+.hey
+{
+	color: violet;
+	font-weight: 500;
+	font-size: 1.2em;
+	border-bottom: 2px solid violet;
+}
+
+.image
+{
+	width: 500px;
+	height: 500px;
+}
+
+.image img
+{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.content
+{
+	display: flex;
+	width: 90%;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.main-text
+{
+	width: 500px;
+}
+
+.main-text h1
+{
+	font-size: 3.5em;
+	color: white;
+	margin: 0px 0px 10px 10px;
+	line-height: 60px;
+}
+
+.main-text
+{
+	color: gray;
+}
+
+.resume-btn
+{
+	width: 390px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: White;
+	font-size: 25px;
+	background-color: violet;
+	border-radius: 20px;
+	box-shadow: 5px 10px 30px rgba(24, 139, 119, 0.2);
+}
+
+.resume-btn:hover
+{
+	background-color: violet;
+	transition: all ease0.2;
+}
+
+.menu li a:hover
+{
+	background-color: violet;
+	color: white;
+	box-shadow: 5px 10px 30px rgba(24, 139, 119, 0.2);
+	transition: all ease0.2;
+}

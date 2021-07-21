@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Payment Checkout Form</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+	<link rel="stylesheet" href="paystyle.css">
+
+</head>
+<body>
+
+
+
+<div class="wrapper">
+  <div class="payment">
+    <div class="payment-logo">
+      <p>p</p>
+    </div>
+
+
+    <h2>Payment Gateway</h2>
+    <form action="bankkk.php" method="post">
+      <div class="card space icon-relative">
+        <label class="label">Card_holder:</label>
+        <input type="text" class="input" placeholder="Card_holder_name" name="Card_holder_name">
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="card space icon-relative">
+        <label class="label">Card_number:</label>
+        <input type="text" class="input" data-mask="0000 0000 0000 0000" placeholder="Card_Number" name="Card_Number">
+        <i class="far fa-credit-card"></i>
+      </div>
+      <div class="card-grp space">
+        <div class="card-item icon-relative">
+          <label class="label">Expiry_date:</label>
+          <input type="date" class="input" name="Expiry_date" 
+        placeholder="Expiry_date" value=""
+        min="1997-01-01" max="2030-12-31">
+          <!--<i class="far fa-calendar-alt"></i>-->
+        </div>
+        <div class="card-item icon-relative">
+          <label class="label">CVV:</label>
+          <input type="password" class="input" data-mask="000" placeholder="000" name="CVV">
+          <i class="fas fa-lock"></i>
+        </div>
+      </div>
+      <div class="card space icon-relative">
+      <label class="label">Amount:</label>
+          <input type="text" class="input" placeholder=" " name="Amount">
+          
+        </div>
+
+      <input type="Submit" id="button" class="btt">
+     </form>   
+
+    
+  </div>
+</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script>
+      document.getElementById('button').addEventListener('click',function(){
+        alert("Your transaction has been successfully done!!!");
+
+      });
+        //function myFun()
+        //{
+        //    alert("Your transaction has been successfully done!!!");
+        //}
+    </script>
+</body>
+</html> 
